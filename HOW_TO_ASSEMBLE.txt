@@ -1,0 +1,49 @@
+Parts C, E, F, G
+================
+
+INSTALL (from inside your repo folder)
+
+  tar -xf "%USERPROFILE%\Downloads\nammamart_partsCEFG_bhavani.zip" --strip-components=1
+
+Nothing existing is overwritten.
+
+WHAT IS HERE
+  SUBMISSION_partC.md             Part C, scheduling answers          10 marks
+  SUBMISSION_partE.md             Part E, governance, 9 answers       10 marks
+  SUBMISSION_partG.md             Part G, CTO recommendation          10 marks
+  PART_F_GUIDE.md                 Part F, how to run the 10 experiments
+  include/sql/business_questions.sql   the six questions with verified answers
+
+ASSEMBLE SUBMISSION.md IN THIS ORDER
+  1. Part 0   (already in SUBMISSION.md)
+  2. Part A   SUBMISSION_partA.md
+  3. Part B   SUBMISSION_partB.md
+  4. Part C   SUBMISSION_partC.md
+  5. Part D   write 3 lines pointing at include/dq_checks.py and the
+              dq_results query. The evidence is the table, not prose.
+  6. Part E   SUBMISSION_partE.md
+  7. Part F   you fill in, using PART_F_GUIDE.md
+  8. Part G   SUBMISSION_partG.md
+  9. Business questions: paste include/sql/business_questions.sql output
+
+Then delete the individual SUBMISSION_part*.md files so there is one document.
+
+WHAT IS LEFT FOR YOU
+  - Part F: run the 10 experiments and record them. 2 hours. 15 marks.
+  - Screenshots:
+      both DAGs Graph view, green run
+      schedule column showing 9:00 AM IST (set UI timezone to Asia/Kolkata)
+      one quarantine file open
+      query results from dq_results, pipeline_runs, mart_payment_reconciliation
+  - Decide the negative-quantity question, or state the assumption
+  - Final commit and push
+
+BONUS MARKS WORTH TAKING (+10 available)
+  1. Slack alert on failure. include/slack_notifier.py already exists and reads
+     Variable.get("SLACK_WEBHOOK_URL"). Add to default_args:
+         "on_failure_callback": <the notifier function>
+     Half a day of marks for ten minutes of work.
+  2. Store capacity check: daily orders vs capacity_orders_per_day. One SQL model
+     against mart_daily_store_kpis joined to stg_stores.
+  3. Quality trend chart from dq_results. You already have multiple runs recorded.
+  4. SCD Type 2 customer dimension. The most work; skip unless time allows.
