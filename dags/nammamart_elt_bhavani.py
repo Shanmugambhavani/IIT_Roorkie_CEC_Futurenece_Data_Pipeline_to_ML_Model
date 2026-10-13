@@ -36,6 +36,7 @@ import pandas as pd  # noqa: E402
 
 import dq_checks as dq  # noqa: E402
 import warehouse as W  # noqa: E402
+from alerts import dag_failure_alert  # noqa: E402
 
 OWNER = "bhavani"
 BASE = Path("/usr/local/airflow/include")
@@ -94,13 +95,20 @@ default_args = {
     "retry_delay": timedelta(minutes=5),
     "execution_timeout": timedelta(minutes=30),
     "depends_on_past": False,
+    "on_failure_callback": dag_failure_alert,
 }
 
 
 @dag(
     dag_id="nammamart_elt_bhavani",
     description="NammaMart ELT: keep every raw row, clean in SQL inside the warehouse",
-    schedule="0 9 * * 1-6",
+    # Staggered five minutes after the ETL DAG. Both pipelines write to the same
+    # DuckDB file, which takes an exclusive lock, so scheduling both at 09:00
+    # guarantees one of them fails on a lock error. Observed during testing:
+    # build_reports failed with no data problem at all because a concurrent run
+    # held the file. max_active_runs=1 prevents a DAG colliding with itself, not
+    # with its sibling. Five minutes is ample: a full run takes under 30 seconds.
+    schedule="5 9 * * 1-6",
     start_date=pendulum.datetime(2026, 10, 1, tz="Asia/Kolkata"),
     catchup=False,
     max_active_runs=1,

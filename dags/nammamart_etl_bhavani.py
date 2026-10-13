@@ -37,6 +37,7 @@ import pandas as pd  # noqa: E402
 import dq_checks as dq  # noqa: E402
 import transforms as T  # noqa: E402
 import warehouse as W  # noqa: E402
+from alerts import dag_failure_alert  # noqa: E402
 
 # --------------------------------------------------------------------------
 # Configuration
@@ -88,6 +89,10 @@ default_args = {
     "retry_delay": timedelta(minutes=5),
     "execution_timeout": timedelta(minutes=30),
     "depends_on_past": False,
+    # Fires once per task after the final retry is exhausted. Falls back to a
+    # console print when no SLACK_WEBHOOK_URL variable is set, so this is safe
+    # to leave wired in on a laptop.
+    "on_failure_callback": dag_failure_alert,
 }
 
 

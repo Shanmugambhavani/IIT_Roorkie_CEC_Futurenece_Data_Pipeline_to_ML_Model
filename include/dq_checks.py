@@ -389,7 +389,13 @@ def dataset_checks(
 
     ts_column = {"orders": "order_ts", "payments": "payment_ts"}.get(dataset)
     if ts_column and ts_column in df.columns:
-        latest = to_ts(df[ts_column]).max()
+        # Future dated rows are excluded before taking the maximum. Seven orders in
+        # this export are dated 2027, and using a plain max() lets those junk rows
+        # mask a genuinely stale file: the data looks fresh forever because one bad
+        # timestamp is always in the future. Freshness has to be measured against
+        # the latest *plausible* record, not the latest record.
+        parsed = to_ts(df[ts_column])
+        latest = parsed[parsed <= ctx["as_of"]].max()
         stale = bool(
             pd.isna(latest)
             or (ctx["as_of"] - latest).days > STALE_AFTER_DAYS

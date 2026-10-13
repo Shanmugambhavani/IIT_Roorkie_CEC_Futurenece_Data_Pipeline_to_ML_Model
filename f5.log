@@ -1,0 +1,342 @@
+Running: airflow dags test nammamart_etl_bhavani
+2026-10-13T06:42:10.603436Z [warning  ] Astro managed secrets backend is disabled [astronomer.runtime.plugin.AstronomerRuntimePlugin] loc=plugin.py:125
+2026-10-13T06:42:10.640966Z [warning  ] FileType is deprecated. Simply open files after parsing arguments. [py.warnings] category=PendingDeprecationWarning filename=/usr/local/lib/python3.14/site-packages/airflow/cli/cli_config.py lineno=646
+2026-10-13T06:42:10.642328Z [warning  ] FileType is deprecated. Simply open files after parsing arguments. [py.warnings] category=PendingDeprecationWarning filename=/usr/local/lib/python3.14/site-packages/airflow/cli/cli_config.py lineno=868
+2026-10-13T06:42:11.250152Z [warning  ] Could not import graphviz. Rendering graph to the graphical format will not be possible. 
+You might need to install the graphviz package and necessary system packages.
+Run `pip install graphviz` to attempt to install it. [py.warnings] category=UserWarning filename=/usr/local/lib/python3.14/site-packages/airflow/cli/commands/dag_command.py lineno=57
+2026-10-13T06:42:11.629073Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-10-13T06:42:11.629248Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-10-13T06:42:11.629313Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-10-13T06:42:11.629377Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-10-13T06:42:11.629483Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-10-13T06:42:11.629559Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-10-13T06:42:11.764438Z [info     ] DAG bundles loaded: dags-folder [airflow.dag_processing.bundles.manager.DagBundlesManager] loc=manager.py:271
+2026-10-13T06:42:11.775404Z [info     ] Filling up the DagBag from /usr/local/airflow/dags [airflow.dag_processing.dagbag.BundleDagBag] loc=dagbag.py:463
+2026-10-13T06:42:12.543975Z [warning  ] The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/meridian_pipeline.py lineno=27
+2026-10-13T06:42:12.544136Z [warning  ] The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/meridian_pipeline.py lineno=27
+2026-10-13T06:42:12.566489Z [warning  ] The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/nammamart_elt_bhavani.py lineno=31
+2026-10-13T06:42:12.566643Z [warning  ] The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/nammamart_elt_bhavani.py lineno=31
+2026-10-13T06:42:12.586028Z [warning  ] The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/nammamart_etl_bhavani.py lineno=31
+2026-10-13T06:42:12.586185Z [warning  ] The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/nammamart_etl_bhavani.py lineno=31
+2026-10-13T06:42:12.616280Z [info     ] Bulk-writing dags to db        [airflow.serialization.definitions.dag] count=4 loc=dag.py:210
+2026-10-13T06:42:12.893610Z [info     ] Getting latest run for non-partitioned Dag [airflow.dag_processing.collection] dag_id=example_astronauts loc=collection.py:200
+2026-10-13T06:42:12.900234Z [info     ] no latest run found            [airflow.dag_processing.collection] dag_id=example_astronauts loc=collection.py:210
+2026-10-13T06:42:12.906673Z [info     ] get next_dagrun_info_v2        [airflow.serialization.definitions.dag] last_automated_run_info=None loc=dag.py:445 next_info=DagRunInfo(run_after=DateTime(2026, 10, 13, 0, 0, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 13, 0, 0, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 13, 0, 0, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None)
+2026-10-13T06:42:12.906911Z [info     ] setting next dagrun info       [airflow.models.dag] loc=dag.py:848 next_dagrun='2026-10-13 00:00:00+00:00' next_dagrun_create_after='2026-10-13 00:00:00+00:00' next_dagrun_data_interval_end='2026-10-13 00:00:00+00:00' next_dagrun_data_interval_start='2026-10-13 00:00:00+00:00' next_dagrun_partition_date=None next_dagrun_partition_key=None
+2026-10-13T06:42:12.908302Z [info     ] get next_dagrun_info_v2        [airflow.serialization.definitions.dag] last_automated_run_info=None loc=dag.py:445 next_info=None
+2026-10-13T06:42:12.908441Z [info     ] setting next dagrun info       [airflow.models.dag] loc=dag.py:848 next_dagrun=None next_dagrun_create_after=None next_dagrun_data_interval_end=None next_dagrun_data_interval_start=None next_dagrun_partition_date=None next_dagrun_partition_key=None
+2026-10-13T06:42:12.909837Z [info     ] Getting latest run for non-partitioned Dag [airflow.dag_processing.collection] dag_id=nammamart_elt_bhavani loc=collection.py:200
+2026-10-13T06:42:12.911890Z [info     ] got latest run                 [airflow.dag_processing.collection] dag_id=nammamart_elt_bhavani loc=collection.py:203 logical_date='2026-10-13 03:30:00+00:00' partition_key=None
+2026-10-13T06:42:12.918824Z [info     ] get next_dagrun_info_v2        [airflow.serialization.definitions.dag] last_automated_run_info=DagRunInfo(run_after=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None) loc=dag.py:445 next_info=DagRunInfo(run_after=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None)
+2026-10-13T06:42:12.919059Z [info     ] setting next dagrun info       [airflow.models.dag] loc=dag.py:848 next_dagrun='2026-10-14 03:30:00+00:00' next_dagrun_create_after='2026-10-14 03:30:00+00:00' next_dagrun_data_interval_end='2026-10-14 03:30:00+00:00' next_dagrun_data_interval_start='2026-10-14 03:30:00+00:00' next_dagrun_partition_date=None next_dagrun_partition_key=None
+2026-10-13T06:42:12.920784Z [info     ] Getting latest run for non-partitioned Dag [airflow.dag_processing.collection] dag_id=nammamart_etl_bhavani loc=collection.py:200
+2026-10-13T06:42:12.922834Z [info     ] got latest run                 [airflow.dag_processing.collection] dag_id=nammamart_etl_bhavani loc=collection.py:203 logical_date='2026-10-13 03:30:00+00:00' partition_key=None
+2026-10-13T06:42:12.929678Z [info     ] get next_dagrun_info_v2        [airflow.serialization.definitions.dag] last_automated_run_info=DagRunInfo(run_after=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None) loc=dag.py:445 next_info=DagRunInfo(run_after=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None)
+2026-10-13T06:42:12.929918Z [info     ] setting next dagrun info       [airflow.models.dag] loc=dag.py:848 next_dagrun='2026-10-14 03:30:00+00:00' next_dagrun_create_after='2026-10-14 03:30:00+00:00' next_dagrun_data_interval_end='2026-10-14 03:30:00+00:00' next_dagrun_data_interval_start='2026-10-14 03:30:00+00:00' next_dagrun_partition_date=None next_dagrun_partition_key=None
+2026-10-13T06:42:13.047610Z [info     ] DAG bundles loaded: dags-folder [airflow.dag_processing.bundles.manager.DagBundlesManager] loc=manager.py:271
+2026-10-13T06:42:13.053578Z [info     ] Filling up the DagBag from /usr/local/airflow/dags [airflow.dag_processing.dagbag.BundleDagBag] loc=dagbag.py:463
+2026-10-13T06:42:13.104568Z [warning  ] The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/meridian_pipeline.py lineno=27
+2026-10-13T06:42:13.104722Z [warning  ] The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/meridian_pipeline.py lineno=27
+2026-10-13T06:42:13.118475Z [warning  ] The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/nammamart_elt_bhavani.py lineno=31
+2026-10-13T06:42:13.118628Z [warning  ] The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/nammamart_elt_bhavani.py lineno=31
+2026-10-13T06:42:13.132984Z [warning  ] The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/nammamart_etl_bhavani.py lineno=31
+2026-10-13T06:42:13.133149Z [warning  ] The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`. [py.warnings] category=UserWarning filename=/usr/local/airflow/dags/nammamart_etl_bhavani.py lineno=31
+2026-10-13T06:42:13.146511Z [info     ] Bulk-writing dags to db        [airflow.serialization.definitions.dag] count=4 loc=dag.py:210
+2026-10-13T06:42:13.170878Z [info     ] Getting latest run for non-partitioned Dag [airflow.dag_processing.collection] dag_id=example_astronauts loc=collection.py:200
+2026-10-13T06:42:13.172767Z [info     ] no latest run found            [airflow.dag_processing.collection] dag_id=example_astronauts loc=collection.py:210
+2026-10-13T06:42:13.177530Z [info     ] get next_dagrun_info_v2        [airflow.serialization.definitions.dag] last_automated_run_info=None loc=dag.py:445 next_info=DagRunInfo(run_after=DateTime(2026, 10, 13, 0, 0, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 13, 0, 0, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 13, 0, 0, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None)
+2026-10-13T06:42:13.177742Z [info     ] setting next dagrun info       [airflow.models.dag] loc=dag.py:848 next_dagrun='2026-10-13 00:00:00+00:00' next_dagrun_create_after='2026-10-13 00:00:00+00:00' next_dagrun_data_interval_end='2026-10-13 00:00:00+00:00' next_dagrun_data_interval_start='2026-10-13 00:00:00+00:00' next_dagrun_partition_date=None next_dagrun_partition_key=None
+2026-10-13T06:42:13.179147Z [info     ] get next_dagrun_info_v2        [airflow.serialization.definitions.dag] last_automated_run_info=None loc=dag.py:445 next_info=None
+2026-10-13T06:42:13.179287Z [info     ] setting next dagrun info       [airflow.models.dag] loc=dag.py:848 next_dagrun=None next_dagrun_create_after=None next_dagrun_data_interval_end=None next_dagrun_data_interval_start=None next_dagrun_partition_date=None next_dagrun_partition_key=None
+2026-10-13T06:42:13.180429Z [info     ] Getting latest run for non-partitioned Dag [airflow.dag_processing.collection] dag_id=nammamart_elt_bhavani loc=collection.py:200
+2026-10-13T06:42:13.182328Z [info     ] got latest run                 [airflow.dag_processing.collection] dag_id=nammamart_elt_bhavani loc=collection.py:203 logical_date='2026-10-13 03:30:00+00:00' partition_key=None
+2026-10-13T06:42:13.188007Z [info     ] get next_dagrun_info_v2        [airflow.serialization.definitions.dag] last_automated_run_info=DagRunInfo(run_after=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None) loc=dag.py:445 next_info=DagRunInfo(run_after=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None)
+2026-10-13T06:42:13.188176Z [info     ] setting next dagrun info       [airflow.models.dag] loc=dag.py:848 next_dagrun='2026-10-14 03:30:00+00:00' next_dagrun_create_after='2026-10-14 03:30:00+00:00' next_dagrun_data_interval_end='2026-10-14 03:30:00+00:00' next_dagrun_data_interval_start='2026-10-14 03:30:00+00:00' next_dagrun_partition_date=None next_dagrun_partition_key=None
+2026-10-13T06:42:13.189567Z [info     ] Getting latest run for non-partitioned Dag [airflow.dag_processing.collection] dag_id=nammamart_etl_bhavani loc=collection.py:200
+2026-10-13T06:42:13.191538Z [info     ] got latest run                 [airflow.dag_processing.collection] dag_id=nammamart_etl_bhavani loc=collection.py:203 logical_date='2026-10-13 03:30:00+00:00' partition_key=None
+2026-10-13T06:42:13.197242Z [info     ] get next_dagrun_info_v2        [airflow.serialization.definitions.dag] last_automated_run_info=DagRunInfo(run_after=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 13, 3, 30, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None) loc=dag.py:445 next_info=DagRunInfo(run_after=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC')), data_interval=DataInterval(start=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC')), end=DateTime(2026, 10, 14, 3, 30, 0, tzinfo=Timezone('UTC'))), partition_date=None, partition_key=None)
+2026-10-13T06:42:13.197451Z [info     ] setting next dagrun info       [airflow.models.dag] loc=dag.py:848 next_dagrun='2026-10-14 03:30:00+00:00' next_dagrun_create_after='2026-10-14 03:30:00+00:00' next_dagrun_data_interval_end='2026-10-14 03:30:00+00:00' next_dagrun_data_interval_start='2026-10-14 03:30:00+00:00' next_dagrun_partition_date=None next_dagrun_partition_key=None
+2026-10-13T06:42:13.265036Z [info     ] creating dag run               [airflow.serialization.definitions.dag] loc=dag.py:607 logical_date=DateTime(2026, 10, 13, 6, 42, 11, 763594, tzinfo=Timezone('UTC')) partition_key=None run_after=DateTime(2026, 10, 13, 6, 42, 13, 46779, tzinfo=Timezone('UTC')) run_id=manual__2026-10-13T06:42:13.046779+00:00
+2026-10-13T06:42:13.325354Z [info     ] Created dag run.               [airflow.models.dagrun] dagrun=<DagRun nammamart_etl_bhavani @ 2026-10-13 06:42:11.763594+00:00: manual__2026-10-13T06:42:13.046779+00:00, state:running, queued_at: None. run_type: manual> loc=dagrun.py:2446
+2026-10-13T06:42:13.354446Z [info     ] [DAG TEST] starting task_id=prepare_run map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:13.354975Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.prepare_run manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52ac-7f5f-98d6-04459a39cb09> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:18.207199Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-5799-7d51-9c5d-c2d3f08a714e hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52ac-7f5f-98d6-04459a39cb09
+2026-10-13T06:42:18.210430Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-5799-7d51-9c5d-c2d3f08a714e loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52ac-7f5f-98d6-04459a39cb09
+2026-10-13T06:42:18.233770Z [warning  ] Astro managed secrets backend is disabled [astronomer.runtime.plugin.AstronomerRuntimePlugin] loc=plugin.py:125
+2026-10-13T06:42:18.243874Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-65fe-7126-8974-ee1895d4e77b field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52ac-7f5f-98d6-04459a39cb09
+2026-10-13T06:42:18.265574Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+2026-10-13T06:42:18.272665Z [info     ] Done. Returned value was: {'run_id': 'manual__2026-10-13T06_42_13_046779_00_00', 'raw_run_id': 'manual__2026-10-13T06:42:13.046779+00:00', 'run_dir': '/usr/local/airflow/include/staging/bhavani/manual__2026-10-13T06_42_13_046779_00_00'} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:18.272852Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:18.273033Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52ac-7f5f-98d6-04459a39cb09'), task_id='prepare_run', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): prepare_run>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 14, 552930, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:18.352386Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-665f-77b4-a9ac-7934994650f0 loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52ac-7f5f-98d6-04459a39cb09
+2026-10-13T06:42:18.361250Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:18.381516Z [info     ] [DAG TEST] end task task_id=prepare_run map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:18.400812Z [info     ] [DAG TEST] starting task_id=extract_payments map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:18.401440Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.extract_payments manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52ae-7e12-a7d7-5c0d507dc6bd> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:18.417875Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-66a8-7a14-b5c3-6fbf50dc701f hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52ae-7e12-a7d7-5c0d507dc6bd
+2026-10-13T06:42:18.419478Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-66a8-7a14-b5c3-6fbf50dc701f loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52ae-7e12-a7d7-5c0d507dc6bd
+2026-10-13T06:42:18.454169Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-66d0-7438-ae6e-919e2844c654 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52ae-7e12-a7d7-5c0d507dc6bd
+2026-10-13T06:42:18.465345Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[extract] payments.csv -> 2228 rows, 7 columns
+2026-10-13T06:42:18.492142Z [info     ] Done. Returned value was: {'dataset': 'payments', 'path': '/usr/local/airflow/include/staging/bhavani/manual__2026-10-13T06_42_13_046779_00_00/raw_payments.pkl', 'rows': 2228} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:18.492469Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:18.492718Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52ae-7e12-a7d7-5c0d507dc6bd'), task_id='extract_payments', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): extract_payments>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 18, 407730, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:18.570802Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6740-775a-80bf-067dabd8e26a loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52ae-7e12-a7d7-5c0d507dc6bd
+2026-10-13T06:42:18.577774Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:18.582993Z [info     ] [DAG TEST] end task task_id=extract_payments map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:18.583174Z [info     ] [DAG TEST] starting task_id=extract_stores map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:18.583251Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.extract_stores manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b1-7d81-9fd9-f8ed22fb4e33> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:18.602559Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6761-7990-8be9-53374b38d97a hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b1-7d81-9fd9-f8ed22fb4e33
+2026-10-13T06:42:18.604170Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6761-7990-8be9-53374b38d97a loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b1-7d81-9fd9-f8ed22fb4e33
+2026-10-13T06:42:18.631633Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6782-72f8-8699-f26e082db57f field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b1-7d81-9fd9-f8ed22fb4e33
+2026-10-13T06:42:18.641605Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[extract] stores.csv -> 15 rows, 8 columns
+2026-10-13T06:42:18.652289Z [info     ] Done. Returned value was: {'dataset': 'stores', 'path': '/usr/local/airflow/include/staging/bhavani/manual__2026-10-13T06_42_13_046779_00_00/raw_stores.pkl', 'rows': 15} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:18.652518Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:18.652653Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b1-7d81-9fd9-f8ed22fb4e33'), task_id='extract_stores', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): extract_stores>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 18, 592759, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:18.724761Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-67d9-7296-8d3c-7288730a25be loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b1-7d81-9fd9-f8ed22fb4e33
+2026-10-13T06:42:18.733727Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:18.742702Z [info     ] [DAG TEST] end task task_id=extract_stores map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:18.742879Z [info     ] [DAG TEST] starting task_id=extract_customers map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:18.742945Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.extract_customers manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52af-7ed8-8d10-e9b75964af0e> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:18.783237Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6813-7bd1-a324-ca397e4f887e hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52af-7ed8-8d10-e9b75964af0e
+2026-10-13T06:42:18.785790Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6813-7bd1-a324-ca397e4f887e loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52af-7ed8-8d10-e9b75964af0e
+2026-10-13T06:42:18.829628Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6843-730c-b263-b3aa9852b4a8 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52af-7ed8-8d10-e9b75964af0e
+2026-10-13T06:42:18.847547Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[extract] customers.csv -> 405 rows, 10 columns
+2026-10-13T06:42:18.879135Z [info     ] Done. Returned value was: {'dataset': 'customers', 'path': '/usr/local/airflow/include/staging/bhavani/manual__2026-10-13T06_42_13_046779_00_00/raw_customers.pkl', 'rows': 405} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:18.879536Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:18.879811Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52af-7ed8-8d10-e9b75964af0e'), task_id='extract_customers', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): extract_customers>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 18, 771004, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:19.073994Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6917-775b-9218-0f5e40b00bae loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52af-7ed8-8d10-e9b75964af0e
+2026-10-13T06:42:19.084507Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:19.099596Z [info     ] [DAG TEST] end task task_id=extract_customers map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:19.100178Z [info     ] [DAG TEST] starting task_id=extract_increment map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:19.100593Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.extract_increment manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b2-77aa-b0a8-fb164cbdf541> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:19.133092Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-696b-791d-9398-51d9d3545e6f hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b2-77aa-b0a8-fb164cbdf541
+2026-10-13T06:42:19.135618Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-696b-791d-9398-51d9d3545e6f loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b2-77aa-b0a8-fb164cbdf541
+2026-10-13T06:42:19.191301Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-69b0-721b-99d0-89c9dc3a00c9 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b2-77aa-b0a8-fb164cbdf541
+2026-10-13T06:42:19.207677Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[extract] increment -> 160 rows
+2026-10-13T06:42:19.247119Z [info     ] Done. Returned value was: {'dataset': 'increment', 'path': '/usr/local/airflow/include/staging/bhavani/manual__2026-10-13T06_42_13_046779_00_00/raw_increment.pkl', 'rows': 160} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:19.247311Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:19.247423Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b2-77aa-b0a8-fb164cbdf541'), task_id='extract_increment', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): extract_increment>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 19, 115058, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:19.367507Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6a54-7d3d-b908-33461f18fb26 loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b2-77aa-b0a8-fb164cbdf541
+2026-10-13T06:42:19.380215Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:19.387016Z [info     ] [DAG TEST] end task task_id=extract_increment map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:19.387201Z [info     ] [DAG TEST] starting task_id=extract_products map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:19.387333Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.extract_products manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b0-7434-9e85-3b93ec746b6c> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:19.416792Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6a89-7b5a-9f1f-7dd3b7e472a3 hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b0-7434-9e85-3b93ec746b6c
+2026-10-13T06:42:19.418338Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6a89-7b5a-9f1f-7dd3b7e472a3 loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b0-7434-9e85-3b93ec746b6c
+2026-10-13T06:42:19.468909Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6ac4-7073-9a9b-f91fd6297ba6 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b0-7434-9e85-3b93ec746b6c
+2026-10-13T06:42:19.484000Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[extract] products.csv -> 152 rows, 10 columns
+2026-10-13T06:42:19.497574Z [info     ] Done. Returned value was: {'dataset': 'products', 'path': '/usr/local/airflow/include/staging/bhavani/manual__2026-10-13T06_42_13_046779_00_00/raw_products.pkl', 'rows': 152} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:19.497863Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:19.498144Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b0-7434-9e85-3b93ec746b6c'), task_id='extract_products', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): extract_products>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 19, 400678, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:19.581705Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6b30-74f1-b425-9d36b281dbab loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b0-7434-9e85-3b93ec746b6c
+2026-10-13T06:42:19.594125Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:19.604299Z [info     ] [DAG TEST] end task task_id=extract_products map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:19.604600Z [info     ] [DAG TEST] starting task_id=extract_orders map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:19.604752Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.extract_orders manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52ad-7b02-90c4-6b99af6da537> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:19.637551Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6b64-7ea1-8b53-b5e61e2e06ac hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52ad-7b02-90c4-6b99af6da537
+2026-10-13T06:42:19.640197Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6b64-7ea1-8b53-b5e61e2e06ac loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52ad-7b02-90c4-6b99af6da537
+2026-10-13T06:42:19.710729Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6baf-7819-81ff-03562abbbcdc field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52ad-7b02-90c4-6b99af6da537
+2026-10-13T06:42:19.742479Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[extract] orders.csv -> 2417 rows, 13 columns
+2026-10-13T06:42:19.838557Z [info     ] Done. Returned value was: {'dataset': 'orders', 'path': '/usr/local/airflow/include/staging/bhavani/manual__2026-10-13T06_42_13_046779_00_00/raw_orders.pkl', 'rows': 2417} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:19.838913Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:19.839144Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52ad-7b02-90c4-6b99af6da537'), task_id='extract_orders', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): extract_orders>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 19, 619523, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:19.974439Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-6caf-7aac-8613-0c881b840b83 loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52ad-7b02-90c4-6b99af6da537
+2026-10-13T06:42:19.987536Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:20.014318Z [info     ] [DAG TEST] end task task_id=extract_orders map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:20.051407Z [warning  ] No tasks to run. unrunnable tasks: {<TaskInstance: nammamart_etl_bhavani.write_dq_results manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b9-7e0b-b3fe-9d0c63e575ca>, <TaskInstance: nammamart_etl_bhavani.build_reports manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b8-7967-8d0c-4c04dbd0df97>, <TaskInstance: nammamart_etl_bhavani.load_warehouse manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b6-77e8-b047-eb968c243fe2>, <TaskInstance: nammamart_etl_bhavani.reconcile manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b7-7885-a9f8-051df64d16b7>, <TaskInstance: nammamart_etl_bhavani.validate_masters manual__2026-10-13T06:42:13.046779+00:00 [running] ti_id=01a133ff-52b3-7fb3-ab1d-b9dcaa8a7e72>, <TaskInstance: nammamart_etl_bhavani.build_star manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7>, <TaskInstance: nammamart_etl_bhavani.validate_transactions manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b4-7bb2-886a-d7a47820efb2>, <TaskInstance: nammamart_etl_bhavani.run_audit manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52ba-7597-9510-65c5cbd667db>} [airflow.sdk.definitions.dag] loc=dag.py:1424
+2026-10-13T06:42:21.687372Z [warning  ] No tasks to run. unrunnable tasks: {<TaskInstance: nammamart_etl_bhavani.write_dq_results manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b9-7e0b-b3fe-9d0c63e575ca>, <TaskInstance: nammamart_etl_bhavani.build_reports manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b8-7967-8d0c-4c04dbd0df97>, <TaskInstance: nammamart_etl_bhavani.load_warehouse manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b6-77e8-b047-eb968c243fe2>, <TaskInstance: nammamart_etl_bhavani.reconcile manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b7-7885-a9f8-051df64d16b7>, <TaskInstance: nammamart_etl_bhavani.validate_masters manual__2026-10-13T06:42:13.046779+00:00 [running] ti_id=01a133ff-52b3-7fb3-ab1d-b9dcaa8a7e72>, <TaskInstance: nammamart_etl_bhavani.build_star manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7>, <TaskInstance: nammamart_etl_bhavani.validate_transactions manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b4-7bb2-886a-d7a47820efb2>, <TaskInstance: nammamart_etl_bhavani.run_audit manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52ba-7597-9510-65c5cbd667db>} [airflow.sdk.definitions.dag] loc=dag.py:1424
+2026-10-13T06:42:22.707633Z [warning  ] No tasks to run. unrunnable tasks: {<TaskInstance: nammamart_etl_bhavani.write_dq_results manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b9-7e0b-b3fe-9d0c63e575ca>, <TaskInstance: nammamart_etl_bhavani.build_reports manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b8-7967-8d0c-4c04dbd0df97>, <TaskInstance: nammamart_etl_bhavani.load_warehouse manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b6-77e8-b047-eb968c243fe2>, <TaskInstance: nammamart_etl_bhavani.reconcile manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b7-7885-a9f8-051df64d16b7>, <TaskInstance: nammamart_etl_bhavani.validate_masters manual__2026-10-13T06:42:13.046779+00:00 [running] ti_id=01a133ff-52b3-7fb3-ab1d-b9dcaa8a7e72>, <TaskInstance: nammamart_etl_bhavani.build_star manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7>, <TaskInstance: nammamart_etl_bhavani.validate_transactions manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52b4-7bb2-886a-d7a47820efb2>, <TaskInstance: nammamart_etl_bhavani.run_audit manual__2026-10-13T06:42:13.046779+00:00 [None] ti_id=01a133ff-52ba-7597-9510-65c5cbd667db>} [airflow.sdk.definitions.dag] loc=dag.py:1424
+2026-10-13T06:42:23.727183Z [info     ] [DAG TEST] starting task_id=validate_transactions map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:23.727378Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.validate_transactions manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b4-7bb2-886a-d7a47820efb2> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:23.744580Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7b76-7e30-a60f-ece4cbe91a21 hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b4-7bb2-886a-d7a47820efb2
+2026-10-13T06:42:23.746517Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7b76-7e30-a60f-ece4cbe91a21 loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b4-7bb2-886a-d7a47820efb2
+2026-10-13T06:42:23.822139Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7bc8-7237-b1d9-bb92749ad2f7 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b4-7bb2-886a-d7a47820efb2
+2026-10-13T06:42:23.841758Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[validate] merged increment: 160 rows on top of 2417
+[quarantine] orders: 117 rows -> orders_failed_manual__2026-10-13T06_42_13_046779_00_00.csv
+failure_reason
+orders_duplicate_order_id           22
+orders_missing_customer_id          19
+orders_amount_formula_mismatch      15
+orders_quantity_not_positive        11
+orders_product_fk_missing            9
+orders_delivered_without_minutes     8
+orders_future_order_ts               8
+orders_unparseable_order_ts          6
+orders_store_fk_missing              6
+orders_delivery_over_limit           6
+[validate] orders: 2577 in, 2460 passed, 117 quarantined
+[quarantine] payments: 29 rows -> payments_failed_manual__2026-10-13T06_42_13_046779_00_00.csv
+failure_reason
+payments_non_positive_amount     10
+payments_orphan_order_id          8
+payments_future_payment_ts        7
+payments_duplicate_payment_id     4
+[validate] payments: 2228 in, 2199 passed, 29 quarantined
+2026-10-13T06:42:24.071833Z [info     ] Done. Returned value was: {'datasets': {'orders': {'rows_in': 2577, 'rows_out': 2460}, 'payments': {'rows_in': 2228, 'rows_out': 2199}}, 'quarantined': {'orders': 117, 'payments': 29}} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:24.072165Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:24.072368Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b4-7bb2-886a-d7a47820efb2'), task_id='validate_transactions', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): validate_transactions>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 23, 733840, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:24.151113Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7d0a-7bfb-828c-8ea50186591a loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b4-7bb2-886a-d7a47820efb2
+2026-10-13T06:42:24.158513Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:24.165156Z [info     ] [DAG TEST] end task task_id=validate_transactions map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:24.185141Z [info     ] [DAG TEST] starting task_id=build_star map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:24.185472Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.build_star manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:24.204952Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7d41-7879-84f8-27c227ec5d8c hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7
+2026-10-13T06:42:24.207239Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7d41-7879-84f8-27c227ec5d8c loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7
+2026-10-13T06:42:24.276192Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7d8e-7bc9-b5b4-d51465c7bf19 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7
+2026-10-13T06:42:24.290749Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[transform] fact_orders: 2460 rows
+[transform] net revenue: 1,211,087.30
+[transform] gross margin: 278,084.26
+2026-10-13T06:42:24.431707Z [info     ] Done. Returned value was: {'fact_rows': 2460, 'net_revenue': 1211087.3} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:24.431992Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:24.432152Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7'), task_id='build_star', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): build_star>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 24, 193198, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:24.512924Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7e6e-72db-be20-b425758d9f10 loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b5-7a46-bcc2-c4f62a6e8ce7
+2026-10-13T06:42:24.523583Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:24.539448Z [info     ] [DAG TEST] end task task_id=build_star map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:24.560446Z [info     ] [DAG TEST] starting task_id=load_warehouse map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:24.560652Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.load_warehouse manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b6-77e8-b047-eb968c243fe2> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:24.582866Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7eba-7ab3-a641-413fa1291c3a hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b6-77e8-b047-eb968c243fe2
+2026-10-13T06:42:24.584779Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7eba-7ab3-a641-413fa1291c3a loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b6-77e8-b047-eb968c243fe2
+2026-10-13T06:42:24.630876Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-7ef2-7bd2-b841-f898b73af25a field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b6-77e8-b047-eb968c243fe2
+2026-10-13T06:42:24.641041Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[load] etl_dim_customer: 400 rows
+[load] etl_dim_product: 150 rows
+[load] etl_dim_store: 15 rows
+[load] etl_fact_orders: {'incoming': 2460, 'updated': 2460, 'inserted': 0, 'final_rows': 2460}
+2026-10-13T06:42:25.402912Z [info     ] Done. Returned value was: {'incoming': 2460, 'updated': 2460, 'inserted': 0, 'final_rows': 2460} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:25.403209Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:25.403436Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b6-77e8-b047-eb968c243fe2'), task_id='load_warehouse', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): load_warehouse>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 24, 569934, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:25.496659Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-824f-7718-a593-d13691c4fe2b loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b6-77e8-b047-eb968c243fe2
+2026-10-13T06:42:25.505650Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:25.515970Z [info     ] [DAG TEST] end task task_id=load_warehouse map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:25.531419Z [info     ] [DAG TEST] starting task_id=run_audit map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:25.531578Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.run_audit manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52ba-7597-9510-65c5cbd667db> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:25.547855Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8283-7652-9882-8659b287dc6a hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52ba-7597-9510-65c5cbd667db
+2026-10-13T06:42:25.549387Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8283-7652-9882-8659b287dc6a loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52ba-7597-9510-65c5cbd667db
+2026-10-13T06:42:25.663900Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-82f9-75f2-8d8e-1c735095ae39 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52ba-7597-9510-65c5cbd667db
+2026-10-13T06:42:25.678385Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+                                  run_id                dag_id                 start_time                   end_time  rows_extracted  rows_loaded  rows_quarantined  status
+manual__2026-10-13T06:42:13.046779+00:00 nammamart_etl_bhavani 2026-10-13 06:42:11.763594 2026-10-13 06:42:25.679060            5377         2460               146 SUCCESS
+2026-10-13T06:42:26.021744Z [info     ] Done. Returned value was: None [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:26.021941Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:26.033088Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8466-7f33-8771-6ce229fc0709 loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52ba-7597-9510-65c5cbd667db
+2026-10-13T06:42:26.040481Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:26.046539Z [info     ] [DAG TEST] end task task_id=run_audit map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:26.046697Z [info     ] [DAG TEST] starting task_id=reconcile map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:26.046789Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.reconcile manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b7-7885-a9f8-051df64d16b7> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:26.064876Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8488-70a6-a3a1-547b706b3b57 hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b7-7885-a9f8-051df64d16b7
+2026-10-13T06:42:26.066435Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8488-70a6-a3a1-547b706b3b57 loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b7-7885-a9f8-051df64d16b7
+2026-10-13T06:42:26.102571Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-84b2-7895-9345-9a21e8443348 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b7-7885-a9f8-051df64d16b7
+2026-10-13T06:42:26.113493Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[reconcile] 312 mismatches
+reason
+MISSING_PAYMENT               220
+PAYMENT_FOR_REJECTED_ORDER     69
+AMOUNT_MISMATCH                13
+PAYMENT_FOR_NON_DELIVERED      10
+[reconcile] unreconciled value: -46,375.02
+2026-10-13T06:42:26.417277Z [info     ] Done. Returned value was: {'rows': 312, 'net_difference': -46375.01999999999} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:26.417537Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:26.417732Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b7-7885-a9f8-051df64d16b7'), task_id='reconcile', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): reconcile>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 26, 56379, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:26.475580Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8621-76ea-a0e1-d75ca72b3eaa loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b7-7885-a9f8-051df64d16b7
+2026-10-13T06:42:26.484725Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:26.490160Z [info     ] [DAG TEST] end task task_id=reconcile map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:26.528777Z [info     ] [DAG TEST] starting task_id=build_reports map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:26.528969Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.build_reports manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b8-7967-8d0c-4c04dbd0df97> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:26.558538Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8672-79a6-98af-8d6a189e7197 hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b8-7967-8d0c-4c04dbd0df97
+2026-10-13T06:42:26.560335Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8672-79a6-98af-8d6a189e7197 loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b8-7967-8d0c-4c04dbd0df97
+2026-10-13T06:42:26.603197Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-86a4-795f-abe0-13bf5ff5c307 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b8-7967-8d0c-4c04dbd0df97
+2026-10-13T06:42:26.615586Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+
+[report] revenue by zone
+zone
+East       314056.20
+North      243021.55
+South      256214.55
+Unknown     85382.00
+West       312413.00
+
+[report] margin by category
+           category  orders  units  net_revenue      cogs  gross_margin  revenue_on_suspect_cost  margin_pct
+            Staples     336    624    287601.45 225423.36      62178.09                 19018.15        21.6
+      Personal Care     347    678    215345.30 168422.72      46922.58                  4456.20        21.8
+          Household     363    668    212105.05 157638.90      54466.15                     0.00        25.7
+     Dairy & Bakery     405    760    179568.95 131935.95      47633.00                     0.00        26.5
+ Snacks & Beverages     341    683    174988.60 133558.93      41429.67                     0.00        23.7
+Fruits & Vegetables     392    751     99566.20  79054.82      20511.38                  5962.00        20.6
+      Uncategorised      44     88     41911.75  36968.36       4943.39                     0.00        11.8
+
+[report] top 10 customers, PII masked
+customer_id  orders  total_spend customer_name_masked loyalty_tier      city      email_masked
+     C00136       9      8738.10            Sanjay B.       Bronze Bengaluru sa***@example.com
+     C00115       8      8037.70            Sanjay K.       Bronze Bengaluru sa***@example.com
+     C00283       8      7934.60            Nikhil R.       Bronze Bengaluru ni***@example.com
+     C00236      12      7831.80             Sneha N.     Platinum Bengaluru sn***@example.com
+     C00310       8      7258.95             Kiran P.       Bronze Bengaluru     ki***@example
+     C00265       8      7151.30            Vikram H.         Gold Bengaluru vi***@example.com
+     C00071      11      6933.30            Mahesh P.       Silver Bengaluru ma***@example.com
+     C00338       9      6848.55           Bhavana I.       Silver Bengaluru bh***@example.com
+     C00357      11      6637.90             Arjun N.       Bronze Bengaluru ar***@example.com
+     C00209       8      6519.40             Kavya P.     Platinum Bengaluru ka***@example.com
+2026-10-13T06:42:27.030800Z [info     ] Done. Returned value was: {'zone_rows': 460, 'category_rows': 7} [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:27.030996Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:27.031122Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b8-7967-8d0c-4c04dbd0df97'), task_id='build_reports', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): build_reports>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 26, 546394, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:27.086455Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8885-7487-93cb-254b66b3c37f loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b8-7967-8d0c-4c04dbd0df97
+2026-10-13T06:42:27.093564Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:27.104369Z [info     ] [DAG TEST] end task task_id=build_reports map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:27.117783Z [info     ] [DAG TEST] starting task_id=write_dq_results map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1501
+2026-10-13T06:42:27.117941Z [info     ] [DAG TEST] running task <TaskInstance: nammamart_etl_bhavani.write_dq_results manual__2026-10-13T06:42:13.046779+00:00 [TaskInstanceState.SCHEDULED] ti_id=01a133ff-52b9-7e0b-b3fe-9d0c63e575ca> [airflow.sdk.definitions.dag] loc=dag.py:1504
+2026-10-13T06:42:27.131900Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-88b3-727b-80d2-30adb05b2b23 hostname=b1bb060babf8 loc=task_instances.py:231 previous_state=queued ti_id=01a133ff-52b9-7e0b-b3fe-9d0c63e575ca
+2026-10-13T06:42:27.133458Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-88b3-727b-80d2-30adb05b2b23 loc=task_instances.py:259 rows_affected=1 ti_id=01a133ff-52b9-7e0b-b3fe-9d0c63e575ca
+2026-10-13T06:42:27.188415Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-88ef-71b3-89c6-3de33f349c34 field_count=3 loc=task_instances.py:1005 ti_id=01a133ff-52b9-7e0b-b3fe-9d0c63e575ca
+2026-10-13T06:42:27.200277Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2107
+[dq] 47 checks, 32 not passing
+                      check_name severity  rows_failed status
+             stores_missing_zone  Warning            1   WARN
+    stores_non_positive_capacity  Warning            1   WARN
+           products_duplicate_id  Warning            2   WARN
+       products_missing_category  Warning            3   WARN
+       products_non_positive_mrp  Warning            1   WARN
+         products_cost_above_mrp  Warning            5   WARN
+          customers_duplicate_id  Warning            5   WARN
+         customers_future_signup  Warning            3   WARN
+             customers_bad_email  Warning           12   WARN
+             customers_bad_phone  Warning            7   WARN
+           customers_bad_pincode  Warning            3   WARN
+          customers_missing_city  Warning            6   WARN
+           customers_tier_casing  Warning            8   WARN
+       orders_duplicate_order_id Critical           22   FAIL
+      orders_missing_customer_id Critical           19   FAIL
+     orders_unparseable_order_ts Critical            6   FAIL
+          orders_future_order_ts Critical            8   FAIL
+           orders_invalid_status Critical            4   FAIL
+            orders_status_casing  Warning            2   WARN
+      orders_payment_mode_casing  Warning            8   WARN
+    orders_quantity_not_positive Critical           11   FAIL
+    orders_discount_out_of_range Critical            3   FAIL
+  orders_amount_formula_mismatch Critical           18   FAIL
+orders_delivered_without_minutes Critical            8   FAIL
+      orders_delivery_over_limit Critical            6   FAIL
+         orders_store_fk_missing Critical            6   FAIL
+       orders_product_fk_missing Critical            9   FAIL
+   payments_duplicate_payment_id Critical            4   FAIL
+        payments_orphan_order_id Critical            8   FAIL
+    payments_non_positive_amount Critical           10   FAIL
+      payments_future_payment_ts Critical            7   FAIL
+    payments_payment_mode_casing  Warning            8   WARN
+2026-10-13T06:42:27.446786Z [info     ] Done. Returned value was: 47   [airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator] loc=python.py:233
+2026-10-13T06:42:27.446970Z [info     ] ::group::Post Execute          [task] loc=task_runner.py:1577
+2026-10-13T06:42:27.447087Z [info     ] Pushing xcom                   [task] loc=task_runner.py:2171 ti=RuntimeTaskInstance(id=UUID('01a133ff-52b9-7e0b-b3fe-9d0c63e575ca'), task_id='write_dq_results', dag_id='nammamart_etl_bhavani', run_id='manual__2026-10-13T06:42:13.046779+00:00', try_number=1, dag_version_id=UUID('01a133ce-11dd-7c6f-85ed-e2aa3a111dad'), map_index=-1, hostname='b1bb060babf8', context_carrier=None, queue='default', task=<Task(_PythonDecoratedOperator): write_dq_results>, max_tries=2, start_date=datetime.datetime(2026, 10, 13, 6, 42, 27, 123116, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')
+2026-10-13T06:42:27.474290Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] correlation_id=01a133ff-8a08-705c-9369-c647bf5dc6b1 loc=task_instances.py:484 new_state=success rows_affected=1 ti_id=01a133ff-52b9-7e0b-b3fe-9d0c63e575ca
+2026-10-13T06:42:27.482955Z [info     ] ::endgroup::                   [task] loc=task_runner.py:2270
+2026-10-13T06:42:27.488049Z [info     ] [DAG TEST] end task task_id=write_dq_results map_index=-1 [airflow.sdk.definitions.dag] loc=dag.py:1563
+2026-10-13T06:42:27.491629Z [info     ] Marking run <DagRun nammamart_etl_bhavani @ 2026-10-13 06:42:11.763594+00:00: manual__2026-10-13T06:42:13.046779+00:00, state:running, queued_at: None. run_type: manual> successful [airflow.models.dagrun.DagRun] loc=dagrun.py:1249
+2026-10-13T06:42:27.492936Z [info     ] DagRun Finished: dag_id=nammamart_etl_bhavani, logical_date=2026-10-13 06:42:11.763594+00:00, run_id=manual__2026-10-13T06:42:13.046779+00:00, run_start_date=2026-10-13 06:42:11.763594+00:00, run_end_date=2026-10-13 06:42:27.491755+00:00, run_duration=15.728161, state=success, run_type=manual, data_interval_start=2026-10-13 06:42:11.763594+00:00, data_interval_end=2026-10-13 06:42:11.763594+00:00, [airflow.models.dagrun.DagRun] loc=dagrun.py:1315
