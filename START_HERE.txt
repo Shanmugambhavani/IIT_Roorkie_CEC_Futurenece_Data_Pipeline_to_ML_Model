@@ -1,0 +1,67 @@
+NammaMart assignment: everything so far
+=======================================
+
+New laptop? Read SETUP_NEW_LAPTOP.md first.
+
+Your work is also on GitHub:
+https://github.com/Shanmugambhavani/IIT_Roorkie_CEC_Futurenece_Data_Pipeline_to_ML_Model
+
+HOW TO INSTALL THIS
+-------------------
+Clone the repo first, then from inside the repo folder run ONE command:
+
+  tar -xf "%USERPROFILE%\Downloads\nammamart_all_bhavani.zip" --strip-components=1
+
+That drops everything into the right folders and overwrites README.md.
+
+Then copy the dataset (only include/ is mounted into Docker):
+
+  mkdir include\data\nammamart 2>nul & copy assignment\nammamart_dataset\* include\data\nammamart\
+
+Then verify:
+
+  pip install pandas
+  python include/profiling/profile_nammamart.py --data include/data/nammamart --out include/profiling/out
+
+Expected: 34 issue groups, 550 offending rows
+
+WHAT IS INSIDE
+--------------
+SETUP_NEW_LAPTOP.md                      full tool install guide, 8 steps
+README.md                                repo root README
+SUBMISSION.md                            Part 0, graded writing
+include/profiling/profile_nammamart.py   Part 0 profiler, re-runnable
+include/profiling/out/                   generated evidence, 45 files
+include/dq_checks.py                     Part D, 43 quality rules, 6 dimensions
+include/masking.py                       Part D, PII masking for criterion 8
+
+NOT included: the six source CSVs. They are in the repo already at
+assignment/nammamart_dataset/. Copy them as shown above.
+
+ALSO ADD TO .gitignore
+----------------------
+include/warehouse_*.duckdb
+*.duckdb.wal
+
+STATUS
+------
+Part 0  Discovery and profiling          DONE
+Part D  Quality rules module             DONE (not yet wired into a DAG)
+Part A  ETL pipeline                     NEXT
+Part B  ELT pipeline                     pending
+Part C  Scheduling                       pending
+Part E  Governance answers               pending
+Part F  Observability experiments        pending
+Part G  Recommendation to CTO            pending
+
+HEADLINE FINDING
+----------------
+The current morning report overstates September revenue by 83,392, about 6.8%.
+Reported 12,19,020.88 vs 11,35,628.80 after quality rules.
+102 of 2,412 order rows fail at least one Critical rule.
+
+OPEN QUESTION
+-------------
+Negative quantities: 6 orders have a negative quantity AND a matching negative
+payment marked SUCCESS. Currently quarantined. If ops says they are refunds,
+the rule changes and September revenue moves. Decide before Part A is final.

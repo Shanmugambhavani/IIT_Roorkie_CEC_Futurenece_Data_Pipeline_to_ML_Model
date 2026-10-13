@@ -127,7 +127,7 @@ and the exact offending rows per rule are in `include/profiling/out/issue_rows/`
 | 16 | order_id | 8 payments for orders that do not exist | Consistency | 8 | Route to reconciliation as PAYMENT_WITHOUT_ORDER | Critical |
 | 17 | amount_paid | SUCCESS with amount 0 or negative | Accuracy | 10 | A SUCCESS payment must be positive | Critical |
 | 18 | amount_paid | SUCCESS amount differs from the order amount | Consistency | 14 | Reconciliation row, reason AMOUNT_MISMATCH | Critical |
-| 19 | gateway_ref | Blank | Completeness | 301 | Expected for COD, but 285 are SUCCESS across all modes. Load and flag | Warning |
+| 19 | gateway_ref | Blank, but **all 301 are Cash on Delivery**, where no gateway reference exists | Completeness | 0 after scoping | Rule scoped to non cash modes only, which then passes cleanly. A blanket not-null rule here would have raised 301 false alarms | Warning |
 | 20 | payment_mode | Same casing variants as orders | Consistency | 8 | Lookup map | Warning |
 
 ### customers.csv
