@@ -1,0 +1,4 @@
+order_id,order_ts,customer_id,store_id,product_id,quantity,unit_price,discount_pct,order_amount,payment_mode,order_status,channel,delivery_minutes
+ORD000500,2026-09-07 18:11:10,C00197,S10,P0032,1,332.0,0,332.0,Card,Pending??,App,19
+ORD001970,2026-09-25 16:47:23,C00082,S03,P0021,3,142.0,5,404.7,UPI,Pending??,App,32
+ORD001637,2026-09-21 16:23:31,C00122,S05,P0002,3,105.0,0,315.0,Card,Pending??,App,34

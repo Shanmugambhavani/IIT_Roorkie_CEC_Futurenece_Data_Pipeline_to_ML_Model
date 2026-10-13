@@ -1,0 +1,4 @@
+order_id,order_ts,customer_id,store_id,product_id,quantity,unit_price,discount_pct,order_amount,payment_mode,order_status,channel,delivery_minutes
+ORD002103,2026-09-27 09:31:35,C00025,S03,P0093,1,492.0,250,492.0,UPI,DELIVERED,App,23
+ORD001468,2026-09-19 16:48:14,C00278,S10,P0044,3,228.0,120,547.2,UPI,DELIVERED,App,26
+ORD001237,2026-09-16 21:16:50,C00140,S11,P0127,5,602.0,150,2408.0,UPI,DELIVERED,App,17

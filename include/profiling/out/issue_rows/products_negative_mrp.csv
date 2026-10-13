@@ -1,0 +1,2 @@
+product_id,product_name,category,sub_category,brand,mrp,cost_price,unit,is_perishable,launch_date
+P0109,SmileBright Shampoo 9,Personal Care,Shampoo,SmileBright,-203.0,162.5,unit,False,2024-04-26

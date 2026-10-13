@@ -13,3 +13,5 @@ airflow.db
 .astro/*.local.yml
 .astro/*.local.yaml
 test_api.py 
+include/warehouse_*.duckdb
+*.duckdb.wal

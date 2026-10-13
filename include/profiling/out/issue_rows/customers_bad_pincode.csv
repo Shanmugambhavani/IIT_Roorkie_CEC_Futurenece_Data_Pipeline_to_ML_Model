@@ -1,0 +1,4 @@
+customer_id,full_name,email,phone,city,area,pincode,signup_date,loyalty_tier,is_active
+C00132,Lakshmi Gowda,lakshmi.gowda132@example.com,9543799371,Bengaluru,JP Nagar,5600XX,2024-10-17,Bronze,N
+C00083,Vikram Murthy,vikram.murthy83@example.com,9841687849,Bengaluru,Indiranagar,5600XX,2026-04-28,Silver,Y
+C00166,Bhavana Kumar,bhavana.kumar166@example.com,9285691463,Bengaluru,Indiranagar,5600XX,2024-07-30,Bronze,N

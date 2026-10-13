@@ -1,0 +1,84 @@
+==============================================================================
+orders  rows=2412  cols=13
+==============================================================================
+  order_id                   blank=    0 distinct=  2400  top={'ORD001462': 2, 'ORD001326': 2, 'ORD001434': 2, 'ORD000783': 2}
+  order_ts                   blank=    1 distinct=  2393  top={'2027-01-01 09:00:00': 3, '2026-09-19 15:32:55': 2, '2026-09-17 22:32:55': 2, '2026-10-21 10:15:00': 2}
+  customer_id                blank=   18 distinct=   401  top={'': 18, 'C00071': 13, 'C00391': 12, 'C00236': 12}
+  store_id                   blank=    0 distinct=    18  top={'S08': 177, 'S07': 176, 'S14': 175, 'S13': 172}
+  product_id                 blank=    0 distinct=   159  top={'P0072': 30, 'P0049': 25, 'P0147': 24, 'P0126': 24}
+  quantity                   blank=    0 distinct=     9  min=-3 max=5
+  unit_price                 blank=    0 distinct=   133  min=10.0 max=883.0
+  discount_pct               blank=    0 distinct=     8  min=0 max=250
+  order_amount               blank=    0 distinct=  1155  min=-1593.0 max=9576.0
+  payment_mode               blank=    0 distinct=     9  top={'UPI': 1329, 'Card': 493, 'Cash on Delivery': 326, 'Wallet': 254}
+  order_status               blank=    0 distinct=     5  top={'DELIVERED': 2182, 'CANCELLED': 156, 'RETURNED': 69, 'Pending??': 3}
+  channel                    blank=    0 distinct=     2  top={'App': 2044, 'Web': 368}
+  delivery_minutes           blank=  164 distinct=    32  min=8.0 max=1440.0
+
+==============================================================================
+payments  rows=2228  cols=7
+==============================================================================
+  payment_id                 blank=    0 distinct=  2224  top={'PAY0001651': 2, 'PAY0000755': 2, 'PAY0000509': 2, 'PAY0002000': 2}
+  order_id                   blank=    0 distinct=  2224  top={'ORD000188': 2, 'ORD000094': 2, 'ORD002122': 2, 'ORD000513': 2}
+  payment_ts                 blank=    0 distinct=  2210  top={'2026-09-18 14:22:10': 8, '2026-09-15 12:00:00': 6, '2026-09-03 13:23:25': 2, '2026-09-02 10:58:26': 2}
+  payment_mode               blank=    0 distinct=     9  top={'UPI': 1238, 'Card': 445, 'Cash on Delivery': 301, 'Wallet': 234}
+  amount_paid                blank=    0 distinct=  1127  min=-1593.0 max=9576.0
+  payment_status             blank=    0 distinct=     3  top={'SUCCESS': 2116, 'REFUNDED': 68, 'FAILED': 44}
+  gateway_ref                blank=  301 distinct=  1924  top={'': 301, 'GW7909341632': 2, 'GW2899060380': 2, 'GW5719011844': 2}
+
+==============================================================================
+customers  rows=405  cols=10
+==============================================================================
+  customer_id                blank=    0 distinct=   400  top={'C00103': 2, 'C00252': 2, 'C00036': 2, 'C00226': 2}
+  full_name                  blank=    0 distinct=   280  top={'Deepa Desai': 5, 'Kavya Pillai': 5, 'Nikhil Bhat': 4, 'Prakash Joshi': 4}
+  email                      blank=    0 distinct=   397  top={'N/A': 4, 'ganesh.naidu103@example.com': 2, 'shreya.rao252@example.com': 2, 'deepa.desai36@example.com': 2}
+  phone                      blank=    0 distinct=   405  min=9804341 max=9999393305
+  city                       blank=    6 distinct=     2  top={'Bengaluru': 399, '': 6}
+  area                       blank=    0 distinct=    15  top={'Indiranagar': 43, 'RT Nagar': 37, 'BTM Layout': 34, 'Yelahanka': 32}
+  pincode                    blank=    0 distinct=    17  min=0.0 max=560102.0
+  signup_date                blank=    0 distinct=   315  top={'2026-02-12': 4, '2026-02-19': 3, '2026-01-07': 3, '2025-12-30': 3}
+  loyalty_tier               blank=    0 distinct=     7  top={'Bronze': 185, 'Silver': 133, 'Gold': 54, 'Platinum': 25}
+  is_active                  blank=    0 distinct=     2  top={'Y': 352, 'N': 53}
+
+==============================================================================
+products  rows=152  cols=10
+==============================================================================
+  product_id                 blank=    0 distinct=   150  top={'P0030': 2, 'P0140': 2, 'P0001': 1, 'P0002': 1}
+  product_name               blank=    0 distinct=   152  top={'Desi Farms Fresh Vegetables 1': 1, 'Desi Farms Fresh Fruits 2': 1, 'Desi Farms Fresh Fruits 3': 1, 'GreenLeaf Fresh Fruits 4': 1}
+  category                   blank=    3 distinct=     7  top={'Dairy & Bakery': 26, 'Household': 26, 'Fruits & Vegetables': 25, 'Snacks & Beverages': 25}
+  sub_category               blank=    0 distinct=    21  top={'Detergent': 14, 'Fresh Fruits': 10, 'Shampoo': 10, 'Herbs': 8}
+  brand                      blank=    0 distinct=    23  top={'Kaveri Dairy': 14, 'DalBazaar': 12, 'Desi Farms': 10, 'CleanPro': 10}
+  mrp                        blank=    0 distinct=   135  min=-203.0 max=883.0
+  cost_price                 blank=    0 distinct=   150  min=6.79 max=631.79
+  unit                       blank=    0 distinct=     3  top={'pack': 76, 'unit': 51, 'kg': 25}
+  is_perishable              blank=    0 distinct=     2  top={'False': 101, 'True': 51}
+  launch_date                blank=    0 distinct=   145  top={'2025-08-23': 2, '2024-08-21': 2, '2023-07-23': 2, '2024-02-13': 2}
+
+==============================================================================
+stores  rows=15  cols=8
+==============================================================================
+  store_id                   blank=    0 distinct=    15  top={'S01': 1, 'S02': 1, 'S03': 1, 'S04': 1}
+  store_name                 blank=    0 distinct=    15  top={'NammaMart Hebbal': 1, 'NammaMart Yelahanka': 1, 'NammaMart RT Nagar': 1, 'NammaMart Jayanagar': 1}
+  zone                       blank=    1 distinct=     5  top={'East': 4, 'West': 4, 'North': 3, 'South': 3}
+  area                       blank=    0 distinct=    15  top={'Hebbal': 1, 'Yelahanka': 1, 'RT Nagar': 1, 'Jayanagar': 1}
+  pincode                    blank=    0 distinct=    15  min=560003 max=560102
+  open_date                  blank=    0 distinct=    15  top={'2024-04-24': 1, '2024-08-16': 1, '2025-03-08': 1, '2024-08-11': 1}
+  manager_name               blank=    0 distinct=    15  top={'Arjun Hegde': 1, 'Kiran Reddy': 1, 'Priya Rao': 1, 'Ananya Kulkarni': 1}
+  capacity_orders_per_day    blank=    0 distinct=     5  min=0 max=600
+
+==============================================================================
+orders_2026-10-01_increment  rows=160  cols=13
+==============================================================================
+  order_id                   blank=    0 distinct=   160  top={'ORD000017': 1, 'ORD000271': 1, 'ORD000332': 1, 'ORD000337': 1}
+  order_ts                   blank=    0 distinct=   152  top={'2026-10-01 13:47:00': 3, '2026-10-01 11:05:00': 2, '2026-10-01 12:47:00': 2, '2026-10-01 15:10:00': 2}
+  customer_id                blank=    0 distinct=   143  top={'C00003': 2, 'C00074': 2, 'C00248': 2, 'C00050': 2}
+  store_id                   blank=    0 distinct=    15  top={'S11': 18, 'S08': 16, 'S14': 16, 'S05': 14}
+  product_id                 blank=    0 distinct=    98  top={'P0064': 5, 'P0074': 4, 'P0040': 4, 'P0006': 4}
+  quantity                   blank=    0 distinct=     4  min=1 max=4
+  unit_price                 blank=    0 distinct=    90  min=10.0 max=883.0
+  discount_pct               blank=    0 distinct=     5  min=0 max=20
+  order_amount               blank=    0 distinct=   148  min=11.0 max=2052.0
+  payment_mode               blank=    0 distinct=     4  top={'UPI': 46, 'Card': 44, 'Cash on Delivery': 40, 'Wallet': 30}
+  order_status               blank=    0 distinct=     2  top={'DELIVERED': 150, 'RETURNED': 10}
+  channel                    blank=    0 distinct=     1  top={'App': 160}
+  delivery_minutes           blank=    0 distinct=    24  min=8 max=34

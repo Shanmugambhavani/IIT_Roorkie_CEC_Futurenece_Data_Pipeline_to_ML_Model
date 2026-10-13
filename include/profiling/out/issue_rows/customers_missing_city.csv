@@ -1,0 +1,7 @@
+customer_id,full_name,email,phone,city,area,pincode,signup_date,loyalty_tier,is_active
+C00355,Nikhil Desai,nikhil.desai355@example.com,9602592222,,RT Nagar,560032,2026-07-28,Silver,Y
+C00394,Suresh Rao,suresh.rao394@example.com,9192927524,,Vijayanagar,560040,2026-05-19,Bronze,Y
+C00233,Aditya Shetty,aditya.shetty233@example.com,9588916375,,HSR Layout,560102,2026-04-11,Silver,Y
+C00142,Harish Nair,harish.nair142@example.com,9266093796,,BTM Layout,560076,2025-07-04,Bronze,Y
+C00328,Ritu Hegde,ritu.hegde328@example.com,9577600490,,Basaveshwaranagar,560079,2025-11-13,Bronze,Y
+C00219,Ganesh Pillai,ganesh.pillai219@example.com,9252175250,,BTM Layout,560076,2024-06-05,Bronze,Y

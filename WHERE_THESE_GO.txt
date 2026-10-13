@@ -1,0 +1,30 @@
+NammaMart assignment, Part 0 package
+====================================
+
+Everything in this zip mirrors the folder structure of your forked repo.
+Unzip it, then copy the contents of the nammamart_bhavani folder INTO the
+root of your cloned repo, letting folders merge.
+
+What lands where
+----------------
+README.md                            repo root, REPLACES the Astronomer boilerplate
+SUBMISSION.md                        repo root, NEW file (graded writing lives here)
+include/profiling/profile_nammamart.py   the re-runnable profiler
+include/profiling/out/               generated evidence: summary, issues log, offending rows
+
+What this zip does NOT contain
+------------------------------
+The six source CSVs. They are already in your repo at
+assignment/nammamart_dataset/. Copy them yourself into include/data/nammamart/
+because only include/ is mounted into the Airflow container.
+
+Still to add to .gitignore
+--------------------------
+include/warehouse_*.duckdb
+*.duckdb.wal
+
+Re-run the profiler any time
+----------------------------
+python include/profiling/profile_nammamart.py --data include/data/nammamart --out include/profiling/out
+
+Expected output: 34 issue groups, 550 offending rows.

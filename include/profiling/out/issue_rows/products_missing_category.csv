@@ -1,0 +1,4 @@
+product_id,product_name,category,sub_category,brand,mrp,cost_price,unit,is_perishable,launch_date
+P0051,GoldenGrain Dal 1,,Dal,GoldenGrain,283.0,230.3,pack,False,2024-01-14
+P0060,GoldenGrain Rice 10,,Rice,GoldenGrain,531.0,442.6,pack,False,2024-12-08
+P0068,GoldenGrain Oil 18,,Oil,GoldenGrain,649.0,524.12,pack,False,2023-08-16

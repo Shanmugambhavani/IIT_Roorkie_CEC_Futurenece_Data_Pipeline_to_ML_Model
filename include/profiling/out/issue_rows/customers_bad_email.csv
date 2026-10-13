@@ -1,0 +1,13 @@
+customer_id,full_name,email,phone,city,area,pincode,signup_date,loyalty_tier,is_active
+C00337,Asha Pillai,N/A,9927033521,Bengaluru,Banashankari,560070,2024-09-24,Silver,Y
+C00307,Arjun Rao,arjun.rao307example.com,9825478077,Bengaluru,JP Nagar,560078,2025-04-03,Bronze,Y
+C00063,Prakash Pillai,prakash.pillai63@example,9722170430,Bengaluru,RT Nagar,560032,2024-12-22,Gold,Y
+C00045,Varun Naidu,N/A,9799799552,Bengaluru,RT Nagar,560032,2025-08-25,Bronze,Y
+C00363,Lakshmi Naidu,lakshmi.naidu363example.com,9293430107,Bengaluru,HSR Layout,560102,2026-03-03,Silver,Y
+C00310,Kiran Patil,kiran.patil310@example,9179749735,Bengaluru,RT Nagar,560032,2024-06-20,Bronze,N
+C00327,Mahesh Menon,N/A,9855665939,Bengaluru,Banashankari,560070,2025-12-11,Bronze,Y
+C00112,Lakshmi Shetty,lakshmi.shetty112@example,9342708668,Bengaluru,Indiranagar,560038,2025-11-25,Bronze,Y
+C00193,Nandini Reddy,N/A,9006762676,Bengaluru,JP Nagar,560078,2025-05-26,Silver,Y
+C00392,Pooja Murthy,pooja.murthy392example.com,9442094940,Bengaluru,Banashankari,560070,2026-03-07,Bronze,Y
+C00062,Ritu Rao,ritu.rao62example.com,9515319520,Bengaluru,JP Nagar,560078,2025-05-27,Silver,Y
+C00067,Manoj Sharma,manoj.sharma67example.com,9596401658,Bengaluru,Banashankari,560070,2026-07-08,Silver,N

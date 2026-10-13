@@ -1,0 +1,9 @@
+customer_id,full_name,email,phone,city,area,pincode,signup_date,loyalty_tier,is_active
+C00199,Priya Hegde,priya.hegde199@example.com,9774349021,Bengaluru,Whitefield,560066,2024-08-27,SILVER,Y
+C00171,Shreya Bhat,shreya.bhat171@example.com,9353654195,Bengaluru,Hebbal,560024,2024-10-01,SILVER,N
+C00133,Prakash Joshi,prakash.joshi133@example.com,9575692459,Bengaluru,Banashankari,560070,2026-05-13,BRONZE,Y
+C00032,Varun Desai,varun.desai32@example.com,9367365766,Bengaluru,Basaveshwaranagar,560079,2026-06-18,bronze,Y
+C00031,Shreya Menon,shreya.menon31@example.com,9698478961,Bengaluru,Marathahalli,560037,2026-05-20,bronze,Y
+C00196,Rohan Kumar,rohan.kumar196@example.com,9368844431,Bengaluru,Yelahanka,560064,2024-07-21,bronze,Y
+C00136,Sanjay Bhat,sanjay.bhat136@example.com,9617979688,Bengaluru,RT Nagar,560032,2026-05-10,BRONZE,Y
+C00092,Prakash Murthy,prakash.murthy92@example.com,9240415747,Bengaluru,BTM Layout,560076,2025-01-06,BRONZE,Y
