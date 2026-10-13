@@ -248,8 +248,8 @@ PAYMENT_CHECKS: list[Check] = [
 
 CUSTOMER_CHECKS: list[Check] = [
     Check(
-        "customers_duplicate_id", "Uniqueness", "Critical", "customer_id",
-        "customer_id appears more than once",
+        "customers_duplicate_id", "Uniqueness", "Warning", "customer_id",
+        "customer_id appears more than once; deduplicated in transform, not rejected",
         lambda df, ctx: df["customer_id"].duplicated(keep="last"),
     ),
     Check(
@@ -258,7 +258,7 @@ CUSTOMER_CHECKS: list[Check] = [
         lambda df, ctx: blank(df["customer_id"]),
     ),
     Check(
-        "customers_future_signup", "Timeliness", "Critical", "signup_date",
+        "customers_future_signup", "Timeliness", "Warning", "signup_date",
         "signup_date is dated after the run date",
         lambda df, ctx: to_ts(df["signup_date"]) > ctx["as_of"],
     ),
@@ -296,23 +296,23 @@ CUSTOMER_CHECKS: list[Check] = [
 
 PRODUCT_CHECKS: list[Check] = [
     Check(
-        "products_duplicate_id", "Uniqueness", "Critical", "product_id",
-        "product_id appears more than once",
+        "products_duplicate_id", "Uniqueness", "Warning", "product_id",
+        "product_id appears more than once; the (old) row is dropped in transform",
         lambda df, ctx: df["product_id"].duplicated(keep="first"),
     ),
     Check(
-        "products_missing_category", "Completeness", "Critical", "category",
-        "category is blank, so the product drops out of category margin",
+        "products_missing_category", "Completeness", "Warning", "category",
+        "category is blank; defaulted to Uncategorised so revenue is not lost",
         lambda df, ctx: blank(df["category"]),
     ),
     Check(
-        "products_non_positive_mrp", "Accuracy", "Critical", "mrp",
+        "products_non_positive_mrp", "Accuracy", "Warning", "mrp",
         "mrp is zero or negative",
         lambda df, ctx: ~(to_num(df["mrp"]) > 0),
     ),
     Check(
-        "products_cost_above_mrp", "Accuracy", "Critical", "cost_price",
-        "cost_price exceeds mrp, which would make every sale loss making",
+        "products_cost_above_mrp", "Accuracy", "Warning", "cost_price",
+        "cost_price exceeds mrp; margin for these products is flagged, not dropped",
         lambda df, ctx: to_num(df["cost_price"]) > to_num(df["mrp"]),
     ),
     Check(
@@ -329,13 +329,13 @@ PRODUCT_CHECKS: list[Check] = [
 
 STORE_CHECKS: list[Check] = [
     Check(
-        "stores_duplicate_id", "Uniqueness", "Critical", "store_id",
+        "stores_duplicate_id", "Uniqueness", "Warning", "store_id",
         "store_id appears more than once",
         lambda df, ctx: df["store_id"].duplicated(keep="first"),
     ),
     Check(
-        "stores_missing_zone", "Completeness", "Critical", "zone",
-        "zone is blank, so the store vanishes from every zone rollup",
+        "stores_missing_zone", "Completeness", "Warning", "zone",
+        "zone is blank; defaulted to Unknown pending the store master owner's answer",
         lambda df, ctx: blank(df["zone"]),
     ),
     Check(
@@ -441,10 +441,17 @@ def build_context(
     order_ids=(),
 ) -> dict:
     """Everything a check might need beyond the dataframe it is checking."""
+    # The CSV timestamps parse as timezone naive. A timezone aware as_of (for
+    # example pendulum in Asia/Kolkata) cannot be compared against them, so it is
+    # normalised to naive local time here rather than at every call site.
+    as_of_ts = pd.Timestamp(as_of)
+    if as_of_ts.tzinfo is not None:
+        as_of_ts = as_of_ts.tz_localize(None)
+
     return {
         "run_id": run_id,
         "dag_id": dag_id,
-        "as_of": pd.Timestamp(as_of),
+        "as_of": as_of_ts,
         "store_ids": set(store_ids),
         "product_ids": set(product_ids),
         "customer_ids": set(customer_ids),
