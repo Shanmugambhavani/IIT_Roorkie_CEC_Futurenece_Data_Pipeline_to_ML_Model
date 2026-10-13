@@ -2,7 +2,7 @@
 
 FDAIE Module 2, Data Engineering Foundations
 Submitted by **Bhavani**
-
+Repository owner: Shanmugambhavani. Commits authored from mayankmadhur25, a second personal GitHub account. Both belong to me
 Repository: https://github.com/Shanmugambhavani/IIT_Roorkie_CEC_Futurenece_Data_Pipeline_to_ML_Model
 
 ## Headline
